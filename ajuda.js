@@ -39,7 +39,7 @@ module.exports.run = async (client, message, args) => {
       infos.on('collect', r2 => {
 
         ajuda.setTitle("Commandos Informativos")
-        ajuda.setDescription(`**${config.prefix}ajuda**\n Mostra os comandos disponiveis\n **${config.prefix}avatar**\n Mostra o avatar do usuário ou de um bot.\nComo usar: ${config.prefix}avatar @nome do usuario\n **${config.prefix}botinfo**\n Mostra as informações do bot.\n **${config.prefix}serverinfo**\n Mostra as informações do server.\n **${config.prefix}userinfo** \nMostra as informações do usuario.\n**${config.prefix}ping** \n Mostra o tempo que o Bot esta Online.\n **${config.prefix}tempo** \n Mostra o tempo que o Bot esta online.`)
+        ajuda.setDescription(`**${config.prefix}ajuda**\n Mostra os comandos disponiveis\n **${config.prefix}botinfo**\n Mostra as informações do bot.\n **${config.prefix}serverinfo**\n Mostra as informações do server.\n **${config.prefix}userinfo** \nMostra as informações do usuario.\n**${config.prefix}ping** \n Mostra o ping.\n **${config.prefix}tempo** \n Mostra o tempo que o Bot esta online.`)
         msg.edit(ajuda)
         
       })
@@ -48,7 +48,7 @@ module.exports.run = async (client, message, args) => {
       adm.on('collect', r2 => {
 
         ajuda.setTitle("Commandos de administraçao")
-        ajuda.setDescription(`Utlize **${config.prefixADM}** para os comandos.\n**${config.prefixADM}anuncio**\n Faz um anuncio no canal escolhido.\n **${config.prefixADM}apagar**\n Apaga mensagens de um canal.\n **${config.prefixADM}expulsar**\n Expulsa um membro do servidor.\n Como usar: ${config.prefixADM}expulsar @nome do usuario  motivo\n **${config.prefixADM}ban**\n Bane um membro do servidor.\n Como usar ${config.prefixADM}ban @nome do usuario motivo.\n **${config.prefixADM}lock**\n Tranca o canal.\n **${config.prefixADM}unlock**\n Destranca o canal.\n**${config.prefixADM}ram**\n Mostra a ram que o bot esta usando.\n**${config.prefixADM}serverlist**\n Mostra os servidores em que o Bot está.\n**${config.prefixADM}sair**\n sai do servidor escolhido.\n**${config.prefixADM}web 1 / 2**`)
+        ajuda.setDescription(`Utlize **${config.prefixADM}** para os comandos.\n**${config.prefixADM}anuncio**\n Faz um anuncio no canal escolhido.\n **${config.prefixADM}apagar**\n Apaga mensagens de um canal.\n **${config.prefixADM}expulsar**\n Expulsa um membro do servidor.\n Como usar: ${config.prefixADM}expulsar @nome do usuario  motivo\n **${config.prefixADM}ban**\n Bane um membro do servidor.\n Como usar ${config.prefixADM}ban @nome do usuario motivo.\n **${config.prefixADM}lock**\n Tranca o canal.\n **${config.prefixADM}unlock**\n Destranca o canal.`)
         msg.edit(ajuda)
 
       })
